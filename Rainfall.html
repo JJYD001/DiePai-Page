@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall | Die π乐队专访</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 复用主页基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #ff0055;
+            --secondary: #00ffff;
+            --dark: #0a0a0a;
+            --light: #f0f0f0;
+            --gray: #333;
+        }
+        
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 导航栏 */
+        header {
+            background-color: rgba(10, 10, 10, 0.9);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid var(--primary);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--primary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        /* 专访区域 */
+        .interview-section {
+            padding: 150px 0 100px;
+        }
+        
+        .member-header {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 60px;
+            align-items: center;
+        }
+        
+        .member-photo {
+            flex: 0 0 400px;
+            height: 500px;
+            background: url('image/yujie01.jpg') no-repeat center center/cover;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 0, 85, 0.4);
+        }
+        
+        .member-intro h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .member-intro .role {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .interview-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .interview-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #ddd;
+        }
+        
+        .interview-content q {
+            display: block;
+            font-size: 1.3rem;
+            color: var(--secondary);
+            border-left: 3px solid var(--primary);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+        }
+        
+        /* 页脚 */
+        footer {
+            background-color: #0a0a0a;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .social-links a {
+            color: var(--light);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary);
+        }
+        
+        .copyright {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .member-header {
+                flex-direction: column;
+            }
+            .member-photo {
+                width: 100%;
+                flex: none;
+                height: 300px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DIE π</div>
+                <ul class="nav-links">
+                    <li><a href="daipai.html#home">首页</a></li>
+                    <li><a href="daipai.html#about">关于</a></li>
+                    <li><a href="daipai.html#members">成员</a></li>
+                    <li><a href="daipai.html#music">音乐</a></li>
+                    <li><a href="daipai.html#tours">巡演</a></li>
+                    <li><a href="daipai.html#contact">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 专访内容 -->
+    <section class="interview-section">
+        <div class="container">
+            <div class="member-header">
+                <div class="member-photo"></div>
+                <div class="member-intro">
+                    <h1>Rainfall</h1>
+                    <div class="role">主唱 · 乐队灵魂人物</div>
+                    <p>以标志性"大悍焦唱法"撕裂舞台，用声音构建属于雨世代的摇滚宇宙</p>
+                </div>
+            </div>
+
+            <div class="interview-content">
+                <p>初见Rainfall时，她刚结束三个小时的排练，黑色皮衣上还沾着舞台粉尘。这个被粉丝称为"雨姐"的主唱，说话时声音略带沙哑，却比舞台上多了几分温和。"大悍焦唱法？其实就是把肺里的火喷出来而已。"她笑着说，指尖无意识地敲打着桌面，节奏像极了《落雨交响曲》里的鼓点。</p>
+
+                <p>Rainfall的音乐启蒙始于东北老工业区的废弃厂房。"小时候跟着爷爷捡废铁，总能听到远处工厂的轰鸣，那是最原始的节奏。"她14岁第一次接触吉他，用攒了半年的零花钱买了把二手琴，"弦锈得能刮破皮，但弹出第一个和弦时，我知道这辈子离不开这个了。"</p>
+
+                <q>"摇滚不是嘶吼的特权，是诚实的勇气。我唱的不是痛苦，是清醒。"</q>
+
+                <p>2022年乐队成立初期，她曾因独特的唱法饱受争议。"有人说像破锣，有人说太刺耳。"Rainfall反而把批评写进歌词，《艾伦雨克》里那句"我用沙哑对抗圆滑"，成了她最直白的回应。录音棚里，她经常为一个音符反复打磨数小时，"每次发声都像在拆自己的骨头，疼，但重组后会更强。"</p>
+
+                <p>作为乐队的核心创作者，她的灵感往往来自深夜的街头。"凌晨三点的便利店、路灯下醉汉的胡话、地铁里沉默的人群，这些都是歌词。"她掏出手机展示备忘录，密密麻麻记着短句："霓虹是城市的结痂""雨是天空的嘶吼"。</p>
+
+                <p>谈及与OldHus的和声配合，她眼里闪着光："他的低音像大地，我的高音像闪电，碰撞时能产生雷暴。"两人在创作中常有争执，"但最后出来的东西，总比单独一人好。"这种张力在《大东北时代》里体现得淋漓尽致，高低音交织如同冰与火的对话。</p>
+
+                <p>对于"女神"的称号，Rainfall摆摆手："我只是个唱歌的。"她更在意的是现场的能量传递，"看到台下有人跟着嘶吼，那是最爽的时刻——我们在共享同一份生命力。"</p>
+
+                <p>未来，她想尝试把东北二人转的腔调融入摇滚："老祖宗的东西里有股狠劲，和摇滚是一路的。"说这话时，她的眼神里，有老工业区不灭的火光，也有新时代摇滚的锋芒。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            </div>
+            <p class="copyright">&copy; 2025 Die π × 大唯呆的唯   版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>

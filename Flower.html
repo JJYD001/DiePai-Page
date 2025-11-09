@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower | Die π乐队专访</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 复用基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #ff0055;
+            --secondary: #00ffff;
+            --dark: #0a0a0a;
+            --light: #f0f0f0;
+            --gray: #333;
+        }
+        
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 导航栏 */
+        header {
+            background-color: rgba(10, 10, 10, 0.9);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid var(--primary);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--primary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        /* 专访区域 */
+        .interview-section {
+            padding: 150px 0 100px;
+        }
+        
+        .member-header {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 60px;
+            align-items: center;
+        }
+        
+        .member-photo {
+            flex: 0 0 400px;
+            height: 500px;
+            background: url('image/cuihua.jpg') no-repeat center center/cover;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 0, 85, 0.4);
+        }
+        
+        .member-intro h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .member-intro .role {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .interview-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .interview-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #ddd;
+        }
+        
+        .interview-content q {
+            display: block;
+            font-size: 1.3rem;
+            color: var(--secondary);
+            border-left: 3px solid var(--primary);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+        }
+        
+        /* 页脚 */
+        footer {
+            background-color: #0a0a0a;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .social-links a {
+            color: var(--light);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--secondary);
+        }
+        
+        .copyright {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .member-header {
+                flex-direction: column;
+            }
+            .member-photo {
+                width: 100%;
+                flex: none;
+                height: 300px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DIE π</div>
+                <ul class="nav-links">
+                    <li><a href="daipai.html#home">首页</a></li>
+                    <li><a href="daipai.html#about">关于</a></li>
+                    <li><a href="daipai.html#members">成员</a></li>
+                    <li><a href="daipai.html#music">音乐</a></li>
+                    <li><a href="daipai.html#tours">巡演</a></li>
+                    <li><a href="daipai.html#contact">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 专访内容 -->
+    <section class="interview-section">
+        <div class="container">
+            <div class="member-header">
+                <div class="member-photo"></div>
+                <div class="member-intro">
+                    <h1>Flower</h1>
+                    <div class="role">贝斯手 · 乐队节奏基石</div>
+                    <p>以沉稳低频构筑音乐地基，用灵动旋律为重金属注入温柔锋芒</p>
+                </div>
+            </div>
+
+            <div class="interview-content">
+                <p>Flower的贝斯斜靠在排练室的 amplifier 上，琴头缠绕着褪色的红绳，指板边缘镶嵌的贝壳纹已经磨得发亮。她正用软布擦拭琴身，阳光透过百叶窗在深棕色琴体上投下条纹光影。"贝斯就像人的脊椎，平时不显眼，但只要出问题，整个身体都站不住。"她说话时指尖轻轻敲打着琴颈，发出规律的哒哒声，像在为空气打节拍。</p>
+
+                <p>这位被称作"低频花匠"的贝斯手，最初学的是古典钢琴。19岁那年在livehouse看演出，贝斯手突然断弦，她被临时拉上台顶替——那是她第一次碰贝斯，却凭着钢琴功底弹出了整首歌的根音。"下台时手心全是汗，但摸到琴弦震动的瞬间，就像找到了另一个自己。"现在她的琴盒里还放着那副临时借用的拨片，上面用铅笔写着"第一次"。</p>
+
+                <q>"好的贝斯线应该像暗流，藏在音乐底下推动一切，却又在关键时刻冒出来咬你一口。"</q>
+
+                <p>在创作中，Flower总有个特别习惯：先用脚步打拍子两小时再动笔。《落雨交响曲》里那段让粉丝疯狂的滑音，就是她在雨中散步时踩出来的节奏。"身体记住的律动，比脑子记住的更可靠。"她展示手机里的录音文件夹，命名全是时间和地点——"2023.04.15 地铁三号线"记录着《像素东北》的贝斯动机，那是她用手机录下的地铁行驶声，后来成了歌曲的节奏蓝本。</p>
+
+                <p>与Bridge的"钢筋混凝土组合"早已成为乐队标志。"他总嫌我加花太多，我总说他的riff太硬。"Flower笑着说，两人在《大东北时代》的间奏部分争执了整整两周，最后用"Bridge写框架，Flower填缝隙"的方式解决——那段贝斯旋律像藤蔓般缠绕着吉他riff，成了整首歌的点睛之笔。"就像盖房子，他搭钢架，我负责让墙面会呼吸。"</p>
+
+                <p>她的灵感常来自植物生长。"你看爬山虎的卷须，看似随意却总能找到支撑点。"Flower指着排练室窗外的藤蔓，"贝斯也是这样，既要抓住鼓点的根，又要给吉他留出伸展的空间。"这种理念让她的贝斯线兼具结构性和流动性，《艾伦雨克》里那段十六分音符的快速交替，听起来像藤蔓在金属架上快速攀爬。</p>
+
+                <p>舞台上的Flower总穿着白色连衣裙，与乐队的暗黑风格形成强烈反差。"温柔和力量不冲突。"她说，演出到高潮时，她会突然半跪在地，贝斯贴在胸口，低频震动让地板都在发颤。粉丝说她的表演是"用棉花包裹钢铁"，既有着女性的细腻，又带着金属乐的冲击力。</p>
+
+                <p>未来她想尝试把朝鲜族伽倻琴的调式融入贝斯编配："那种忽远忽近的共鸣感，和贝斯的低频很像。"说这话时，她正用变调夹夹在贝斯第三品，弹出一段带着民族风味的旋律，窗外的藤蔓在风里轻轻摇晃，像在为这新的灵感打拍子。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            </div>
+            <p class="copyright">&copy; 2025 Die π × 大唯呆的唯   版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>

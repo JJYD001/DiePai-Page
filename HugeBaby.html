@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HugeBaby | Die π乐队专访</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 复用主页基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #ff0055;
+            --secondary: #00ffff;
+            --dark: #0a0a0a;
+            --light: #f0f0f0;
+            --gray: #333;
+        }
+        
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 导航栏 */
+        header {
+            background-color: rgba(10, 10, 10, 0.9);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid var(--primary);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--primary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        /* 专访区域 */
+        .interview-section {
+            padding: 150px 0 100px;
+        }
+        
+        .member-header {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 60px;
+            align-items: center;
+        }
+        
+        .member-photo {
+            flex: 0 0 400px;
+            height: 500px;
+            background: url('image/dabaobei.png') no-repeat center center/cover;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 0, 85, 0.4);
+        }
+        
+        .member-intro h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .member-intro .role {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .interview-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .interview-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #ddd;
+        }
+        
+        .interview-content q {
+            display: block;
+            font-size: 1.3rem;
+            color: var(--secondary);
+            border-left: 3px solid var(--primary);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+        }
+        
+        /* 页脚 */
+        footer {
+            background-color: #0a0a0a;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .social-links a {
+            color: var(--light);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary);
+        }
+        
+        .copyright {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .member-header {
+                flex-direction: column;
+            }
+            .member-photo {
+                width: 100%;
+                flex: none;
+                height: 300px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DIE π</div>
+                <ul class="nav-links">
+                    <li><a href="daipai.html#home">首页</a></li>
+                    <li><a href="daipai.html#about">关于</a></li>
+                    <li><a href="daipai.html#members">成员</a></li>
+                    <li><a href="daipai.html#music">音乐</a></li>
+                    <li><a href="daipai.html#tours">巡演</a></li>
+                    <li><a href="daipai.html#contact">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 专访内容 -->
+    <section class="interview-section">
+        <div class="container">
+            <div class="member-header">
+                <div class="member-photo"></div>
+                <div class="member-intro">
+                    <h1>HugeBaby</h1>
+                    <div class="role">鼓手 · 乐队节奏灵魂</div>
+                    <p>以力量与细腻并存的鼓点构筑乐队根基，用节奏定义亡圆独特律动</p>
+                </div>
+            </div>
+
+            <div class="interview-content">
+                <p>见到HugeBaby时，他刚结束了一场长达四小时的鼓点训练，汗水浸透的T恤紧贴在身上。这个被队友戏称为"大宝贝"的鼓手，说话轻声细语，与他在舞台上爆发出的能量判若两人。"我的鼓点里住着两个灵魂，一个想砸碎一切，一个想安抚世界。"他腼腆地笑了笑，手指却不自觉地在桌沿敲打出复杂的节奏。</p>
+
+                <p>HugeBaby的鼓手生涯始于一次偶然。16岁那年，他在废品站发现了一套破旧的架子鼓，鼓面已经开裂，镲片也锈迹斑斑。"我用三个月的零花钱买了下来，每天晚上在车库里练习，邻居投诉了不下十次。"他回忆道，那段时间他自学了所有能找到的鼓谱，从经典摇滚到爵士乐，甚至包括中国传统打击乐。</p>
+
+                <q>"节奏是音乐的骨架，我要做的就是让这副骨架既能承受雷霆万钧，又能展现似水柔情。"</q>
+
+                <p>加入Die π之前，HugeBaby曾是一名古典打击乐手。"很多人觉得古典和摇滚格格不入，但对我来说，它们都是关于控制与释放的艺术。"这种独特的背景让他的鼓点既精准又富有层次，在《大东北时代》中那段看似杂乱的即兴鼓点，实则蕴含着严谨的节奏逻辑。"我花了整整两周设计那段节奏，既要听起来狂放不羁，又要为Rainfall的 vocals 留出足够空间。"</p>
+
+                <p>作为乐队的节奏支柱，HugeBaby与贝斯手Flower的配合堪称天衣无缝。"我们不需要太多言语交流，一个眼神就知道对方想往哪个方向走。"他特别欣赏Flower对低频的敏感度，"她总能在我最意想不到的地方给出回应，那种化学反应太奇妙了。"两人在创作时经常进行"节奏对话"，即不用乐器，仅凭口技和手势交流节奏想法。</p>
+
+                <p>对于"巨婴"这个昵称，HugeBaby毫不在意："我确实在生活中有点笨拙，但一坐到鼓前，就像找到了真正的自己。"他的鼓组设置也与众不同，除了常规的套鼓，还加入了一些自制的打击乐器——一个改造过的油桶、几节不同长度的钢管，甚至还有一个从旧货市场淘来的铜钹。"这些'非主流'乐器能带来意想不到的音色，就像给音乐增添了一些意外的色彩。"</p>
+
+                <p>谈到创作灵感，他坦言自己特别喜欢在暴雨天外出："雨滴敲打不同物体的声音本身就是最棒的节奏，我会用手机录下来，回去后尝试在鼓上重现那种感觉。"《落雨交响曲》的鼓点设计就源自一次雷暴天气，"我想捕捉那种从细雨到暴雨再到雨过天晴的节奏变化。"</p>
+
+                <p>未来，HugeBaby希望能将更多东北传统音乐元素融入鼓点："东北大秧歌的节奏其实很有力量，我正在尝试将它与摇滚结合，听起来可能会很疯狂，但值得一试。"说这话时，他的眼神里闪烁着对节奏的痴迷，仿佛已经听到了那些尚未诞生的鼓点。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            </div>
+            <p class="copyright">&copy; 2025 Die π × 大唯呆的唯   版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>

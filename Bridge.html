@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge | Die π乐队专访</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 复用基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #ff0055;
+            --secondary: #00ffff;
+            --dark: #0a0a0a;
+            --light: #f0f0f0;
+            --gray: #333;
+        }
+        
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 导航栏 */
+        header {
+            background-color: rgba(10, 10, 10, 0.9);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid var(--primary);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--primary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        /* 专访区域 */
+        .interview-section {
+            padding: 150px 0 100px;
+        }
+        
+        .member-header {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 60px;
+            align-items: center;
+        }
+        
+        .member-photo {
+            flex: 0 0 400px;
+            height: 500px;
+            background: url('image/daqiao.jpg') no-repeat center center/cover;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 0, 85, 0.4);
+        }
+        
+        .member-intro h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .member-intro .role {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .interview-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .interview-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #ddd;
+        }
+        
+        .interview-content q {
+            display: block;
+            font-size: 1.3rem;
+            color: var(--secondary);
+            border-left: 3px solid var(--primary);
+            padding-left: 20px;
+            margin: 30px 0;
+            font-style: italic;
+        }
+        
+        /* 页脚 */
+        footer {
+            background-color: #0a0a0a;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .social-links a {
+            color: var(--light);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary);
+        }
+        
+        .copyright {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .member-header {
+                flex-direction: column;
+            }
+            .member-photo {
+                width: 100%;
+                flex: none;
+                height: 300px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DIE π</div>
+                <ul class="nav-links">
+                    <li><a href="daipai.html#home">首页</a></li>
+                    <li><a href="daipai.html#about">关于</a></li>
+                    <li><a href="daipai.html#members">成员</a></li>
+                    <li><a href="daipai.html#music">音乐</a></li>
+                    <li><a href="daipai.html#tours">巡演</a></li>
+                    <li><a href="daipai.html#contact">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 专访内容 -->
+    <section class="interview-section">
+        <div class="container">
+            <div class="member-header">
+                <div class="member-photo"></div>
+                <div class="member-intro">
+                    <h1>Bridge</h1>
+                    <div class="role">吉他手 · 乐队技术核心</div>
+                    <p>用指尖编织音网，以复杂而富有张力的riff构筑亡圆乐队的 sonic 堡垒</p>
+                </div>
+            </div>
+
+            <div class="interview-content">
+                <p>Bridge的吉他摆在排练室最角落的位置，琴身布满划痕，拾音器旁贴着泛黄的胶带，上面用马克笔写着"第47次修改"。这个被乐队成员称为"桥神"的吉他手，正用酒精棉擦拭着指板，动作如同外科医生般精准。"琴弦的张力每天都在变，就像人的情绪。"他说话时视线始终没离开琴弦，"你得学会和它们谈判。"</p>
+
+                <p>这位技术核心的音乐之路始于一把红棉牌木吉他。16岁那年，他在废品站发现了这把琴颈弯曲的乐器，花五块钱买回家，用字典当变调夹练了三年。"那时候不知道什么叫和弦，就凭着感觉找音。"他的指尖至今留着厚厚的茧，左手食指第二关节有块明显的疤痕——那是录制《大东北时代》时，被突然断裂的琴弦划伤的。</p>
+
+                <q>"好的riff应该像钩子，先勾住听众的耳朵，再把他们拖进你构建的声场里。"</q>
+
+                <p>在乐队创作中，Bridge以近乎偏执的态度对待每一段吉他编排。《像素东北》里那段急速交替的十六分音符，他在录音棚连续弹奏了43遍才满意。"技术是为情绪服务的，再复杂的技巧，没有灵魂就是杂音。"他展示手机里的录音笔记，光是《艾伦雨克》的前奏就有17个不同版本，最早的录音日期可以追溯到乐队成立前。</p>
+
+                <p>他的创作灵感常来自城市建筑。"你看那些立交桥的钢架结构，交叉、重叠、支撑——这和编曲逻辑是一样的。"他指着排练室窗外的跨江大桥，"那段双吉他solo就是受它启发，两个旋律线既独立又交织，就像上下桥的车流。"这种对结构的敏感，让他的riff既具有数学般的精密，又带着工业时代的粗粝。</p>
+
+                <p>与Flower的贝斯配合被粉丝称为"钢筋混凝土组合"。"她的低音是地基，我的吉他是框架。"Bridge笑着说，两人经常在排练时因一个音符的时值争执不休，"但每次吵完，出来的东西总会更结实。"这种严谨在《落雨交响曲》中尤为明显，吉他与贝斯的咬合如同齿轮般精准，构建出层层递进的声场风暴。</p>
+
+                <p>台下的Bridge沉默寡言，台上却判若两人。他演出时总穿着那件洗褪色的工装夹克，头发被汗水粘在额前，身体随着节拍剧烈摆动，却从不错过一个音符。"站在舞台上，吉他就是我的语言系统。"他说，最享受的时刻是演出到高潮时，与台下观众的能量形成共振，"那时候，我们之间好像架起了一座真正的桥。"</p>
+
+                <p>未来，他计划尝试将东北民间音乐的旋律线条融入重金属 riff："唢呐的爆发力和电吉他的失真其实很像，都是撕破空气的声音。"说这话时，他正调试着一块自制效果器，琴弦发出的啸叫里，仿佛能听到老工业区的锻锤声，和新一代摇滚的心跳。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            </div>
+            <p class="copyright">&copy; 2025 Die π × 大唯呆的唯   版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>

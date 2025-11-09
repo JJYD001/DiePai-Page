@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OldHus | Die π乐队专访</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* 复用主页基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #ff0055;
+            --secondary: #00ffff;
+            --dark: #0a0a0a;
+            --light: #f0f0f0;
+            --gray: #333;
+        }
+        
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* 导航栏 */
+        header {
+            background-color: rgba(10, 10, 10, 0.9);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            border-bottom: 1px solid var(--primary);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--primary);
+            text-shadow: 0 0 10px var(--primary);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 30px;
+        }
+        
+        .nav-links a {
+            color: var(--light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+        
+        /* 专访区域 */
+        .interview-section {
+            padding: 150px 0 100px;
+        }
+        
+        .member-header {
+            display: flex;
+            gap: 50px;
+            margin-bottom: 60px;
+            align-items: center;
+        }
+        
+        .member-photo {
+            flex: 0 0 400px;
+            height: 500px;
+            background: url('image/laokuai.jpg') no-repeat center center/cover;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 0, 85, 0.4);
+        }
+        
+        .member-intro h1 {
+            font-size: 3rem;
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
+        .member-intro .role {
+            font-size: 1.5rem;
+            color: var(--secondary);
+            margin-bottom: 20px;
+        }
+        
+        .interview-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .interview-content p {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 25px;
+            color: #ddd;
+        }
+        
+        /* 页脚 */
+        footer {
+            background-color: #0a0a0a;
+            padding: 50px 0 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .social-links a {
+            color: var(--light);
+            font-size: 1.5rem;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: var(--primary);
+        }
+        
+        .copyright {
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .member-header {
+                flex-direction: column;
+            }
+            .member-photo {
+                width: 100%;
+                flex: none;
+                height: 300px;
+            }
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 导航栏 -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">DIE π</div>
+                <ul class="nav-links">
+                    <li><a href="daipai.html#home">首页</a></li>
+                    <li><a href="daipai.html#about">关于</a></li>
+                    <li><a href="daipai.html#members">成员</a></li>
+                    <li><a href="daipai.html#music">音乐</a></li>
+                    <li><a href="daipai.html#tours">巡演</a></li>
+                    <li><a href="daipai.html#contact">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- 专访内容 -->
+    <section class="interview-section">
+        <div class="container">
+            <div class="member-header">
+                <div class="member-photo"></div>
+                <div class="member-intro">
+                    <h1>OldHus</h1>
+                    <div class="role">主唱 · 低音叙事者</div>
+                    <p>用磁性嗓音编织暗线，在嘶吼与沉默间寻找摇滚的另一种可能</p>
+                </div>
+            </div>
+
+            <div class="interview-content">
+                <p>OldHus的声音像浸过威士忌的砂纸，低沉却带着温度。这个总穿深色衬衫的主唱，说话时习惯前倾身体，仿佛在与你分享某个秘密。"我是乐队里的'老古董'，"他自嘲道，指节分明的手摩挲着吉他弦，"他们玩爆发时，我负责把大家拽回地面。</p>
+
+                <p>与Rainfall的张扬不同，OldHus的音乐之路带着几分宿命感。父亲是煤矿工人，母亲是评剧演员，"家里总有两种声音：矿井的沉闷轰鸣，和舞台上的婉转唱腔。"他16岁在煤矿子弟学校组建第一支乐队，"设备是捡来的废品拼的，演出场地是废弃仓库，观众是工友家的孩子。"</p>
+
+                <p>加入Die π前，他做过五年地下乐队主唱，唱的是晦涩的后朋克。“遇到Rainfall那天，她在酒吧唱《大东北是我的家乡》，破锣嗓子里全是劲儿。”两人当场即兴合唱，“她的高音像刀，我的低音像砧板，居然格外合拍。”</p>
+
+                <p>他的创作总带着工业时代的粗粝感。《像素东北》里那段念白，灵感来自父亲的工作日记："煤矿井下的黑暗，比任何舞台效果都更有力量。"录音时，他坚持在废弃工厂录制环境音，"那些机器的喘息，是老一辈的摇滚。</p>
+
+                <p>处理与Rainfall的和声冲突是门学问。"她像火，我就得是水，但不是灭火，是让火烧得更久。"《大东北时代》的录音曾卡壳三天，"她想往高了冲，我偏要往下压，最后在争吵中找到那个平衡点——就像东北的冬天，冰面下总有流动的水。</p>
+
+                <p>台下的OldHus沉默寡言，却会在演出前给每个成员写小纸条。"Bridge需要'狠点'，Flower需要'稳点'，Rainfall... 她需要'野点'。"他笑称自己是乐队的"情绪调音师"，"摇滚不只靠吼，得有收有放。</p>
+
+                <p>未来他想做一张纯叙事的概念专辑，"讲东北老工业区的故事，从蒸汽机到电子乐。"说这话时，他的声音比平时更低沉，仿佛从地底深处传来："有些声音，需要慢慢听才够味。"</p> 
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container">
+            </div>
+            <p class="copyright">&copy; 2025 Die π × 大唯呆的唯   版权所有</p>
+        </div>
+    </footer>
+</body>
+</html>
